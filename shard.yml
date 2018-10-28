@@ -13,8 +13,13 @@ dependencies:
   kiwi:
     github: crystal-community/kiwi
     version: 0.1.0
+  admiral:
+    github: jwaldrip/admiral.cr
+    version: 1.7.3
 
 targets:
+  droplet:
+    main: tools/providers/digitalocean.cr
   benchmarker:
     main: tools/src/benchmarker.cr
   client:
