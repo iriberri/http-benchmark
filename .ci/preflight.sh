@@ -39,5 +39,4 @@ grep -q "^$FRAMEWORK$" /tmp/changed
 if [[ $? != 0 ]]; then
   echo "$FRAMEWORK was not modified, exiting."
   travis_terminate 0
-  exit 0
 fi
